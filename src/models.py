@@ -7,7 +7,7 @@ Base = declarative_base()
 
 class User(Base):
 	__tablename__ = 'users'
-
+	username = Column(String, default = '')
 	id = Column(Integer, primary_key = True)
 	images = Column(String)
 	bio = Column(Text)

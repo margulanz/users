@@ -18,6 +18,7 @@ class Org(OrgBase):
 
 
 class UserBase(BaseModel):
+	username: str | None  = None
 	images : str
 	bio : str
 	country : str
