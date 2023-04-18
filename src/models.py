@@ -18,7 +18,7 @@ class User(Base):
 	stackexchange_link = Column(String)
 	timezone = Column(String)
 	rank = Column(Integer)
-	orgs = relationship('Org', back_populates = 'users')
+	orgs = relationship('Org', back_populates = 'admin')
 
 
 

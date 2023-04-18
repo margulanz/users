@@ -8,7 +8,7 @@ class OrgCreate(OrgBase):
 
 class Org(OrgBase):
 	id: int
-	admin_id: int
+	admin_id: int | None = None
 
 	class Config:
 		orm_mode = True

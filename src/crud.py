@@ -10,7 +10,7 @@ def get_users(db: Session, skip: int = 0, limit: int = 100):
 
 def create_user(db: Session, user: schemas.UserCreate):
 	db_user = models.User(
-		image = user.image,
+		images = user.images,
 		bio = user.bio,
 		country = user.country,
 		is_verified = user.is_verified,
